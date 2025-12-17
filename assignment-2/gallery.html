@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS (local version) -->
+    <link rel="stylesheet" href="../bootstrap/bootstrap.css">
+    <!-- Custom CSS for Gallery Page -->
+    <link rel="stylesheet" href="gallery.css">
+    <!-- Linking Favicon -->
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+    <title>Gallery | The Culinary House</title>
+</head>
+<body>
+    <header>
+        <div class="heading">
+            <a href="../assignment-1/index.html">
+                <img src="../assets/logo.png" alt="The Culinary House Logo">
+            </a>
+            <div class="text">
+                <h1 class="restaurant">The Culinary House</h1>
+                <h5 class="tagline">Where Taste Meets Excellence</h5>
+            </div>
+        </div>
+        <nav>
+            <div class="nav-item" id="home">
+                <a class="nav-link" href="../assignment-1/index.html">Home</a>
+            </div>
+            <div class="nav-item" id="gallery">
+                <a class="nav-link active-page" href="../assignment-2/gallery.html">Gallery</a>
+            </div>
+            <div class="nav-item" id="menu">
+                <a class="nav-link" href="../assignment-3/menu.html">Menu</a>
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"></a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../assignment-3/menu-pages/starters.html">Starters</a></li>
+                    <li><a class="dropdown-item" href="../assignment-3/menu-pages/main-courses.html">Main Courses</a>
+                    </li>
+                    <li><a class="dropdown-item" href="../assignment-3/menu-pages/beverages.html">Beverages</a></li>
+                </ul>
+            </div>
+            <div class="nav-item" id="place-order">
+                <a class="nav-link" href="../assignment-4/place-order.html">Place Order</a>
+            </div>
+            <div class="nav-item" id="table-booking">
+                <a class="nav-link" href="../assignment-5/table-booking.html">Table Booking</a>
+            </div>
+            <div class="nav-item" id="contact-us">
+                <a class="nav-link" href="../assignment-6/contact-us.html   ">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+    <nav class="gallery-nav">
+        <a href="#achievements">Achievements</a> |
+        <a href="#branches">Branches</a> |
+        <a href="#behind-the-scenes">Behind the Scenes</a>
+    </nav>
+    <section class="achievements container" id="achievements">
+        <div class="container">
+            <h2 class="text-center title">Our Achievements</h2>
+            <div id="achievementsCarousel" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active text-center">
+                        <h3 class="heading">Wall of Honors</h3>
+                        <img src="gallery-assets/achievements/achievements-wall.png"
+                            alt="The Culinary House | Wall of Honors">
+                        <p class="description">
+                            A stunning display of framed accolades, certifications, and memories that reflect years of
+                            dedication to excellence.
+                        </p>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <h3 class="heading">Best Restaurant of the Year</h3>
+                        <img src="gallery-assets/achievements/best-restaurant-of-year-award.png"
+                            alt="The Culinary House | Best Restaurant of the Year">
+                        <p class="description">
+                            Recognized as the Best Restaurant of 2024 by the City Food & Hospitality Council — a
+                            testament to our team's commitment.
+                        </p>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <h3 class="heading">Chef's Moment of Glory</h3>
+                        <img src="gallery-assets/achievements/chef-award.png"
+                            alt="The Culinary House | Chef's Moment of Glory">
+                        <p class="description">
+                            Our head chef receiving national recognition for culinary innovation and mastery in
+                            authentic gourmet cuisine.
+                        </p>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <h3 class="heading">Trophy of Excellence</h3>
+                        <img src="gallery-assets/achievements/restaurant-trophy.png"
+                            alt="The Culinary House | Trophy of Excellence">
+                        <p class="description">
+                            A proud moment captured in time - awarded for maintaining outstanding food quality and
+                            customer satisfaction year after year.
+                        </p>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <h3 class="heading">Customer's Choice Award</h3>
+                        <img src="gallery-assets/achievements/customer's-choice-award.png"
+                            alt="The Culinary House | Customer's Choice Award">
+                        <p class="description">
+                            An award that matters the most — chosen and voted by our cherished guests who made us their
+                            favorite dining destination.
+                        </p>
+                    </div>
+                </div>
+                <!-- Carousel Controls -->
+                <button class="carousel-controls carousel-control-prev" type="button"
+                    data-bs-target="#achievementsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-controls carousel-control-next" type="button"
+                    data-bs-target="#achievementsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+    </section>
+    <section class="branches container" id="branches">
+        <div class="container">
+            <h2 class="text-center title">Discover Our Culinary Destinations</h2>
+            <div id="branchesCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active text-center">
+                        <h3 class="heading">The Culinary House - Downtown Delight</h3>
+                        <img src="gallery-assets/branches/downtown-delight.png"
+                            alt="The Culinary House - Downtown Delight">
+                        <p class="description">
+                            Located in the bustling heart of the city, this flagship branch offers a modern dining
+                            experience with an elegant touch, perfect for both casual meals and corporate meetups.
+                        </p>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <h3 class="heading">The Culinary House - Lakeside Retreat</h3>
+                        <img src="gallery-assets/branches/lakeside-retreat.png"
+                            alt="The Culinary House - Lakeside Retreat">
+                        <p class="description">
+                            A peaceful lakeside branch offering tranquil vibes and stunning waterfront views, ideal for
+                            romantic dinners and serene weekend lunches.
+                        </p>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <h3 class="heading">The Culinary House - Heritage Lane</h3>
+                        <img src="gallery-assets/branches/heritage-lane.png" alt="The Culinary House - Heritage Lane">
+                        <p class="description">
+                            Housed in a restored colonial building, this branch blends tradition and taste with vintage
+                            charm and culinary excellence.
+                        </p>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <h3 class="heading">The Culinary House - Coastal Breeze</h3>
+                        <img src="gallery-assets/branches/coastal-breeze.png" alt="The Culinary House - Coastal Breeze">
+                        <p class="description">
+                            Set along the coastline, this branch captures the essence of seaside freshness with an
+                            open-air dining space and sea-inspired décor.
+                        </p>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <h3 class="heading">The Culinary House - Hilltop Haven</h3>
+                        <img src="gallery-assets/branches/hilltop-heaven.png" alt="The Culinary House - Hilltop Haven">
+                        <p class="description">
+                            Perched on a scenic hillside, this branch offers a panoramic view of nature's beauty and a
+                            truly elevated dining experience.
+                        </p>
+                    </div>
+                </div>
+                <!-- Carousel Controls -->
+                <button class="carousel-controls carousel-control-prev" type="button" data-bs-target="#branchesCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-controls carousel-control-next" type="button" data-bs-target="#branchesCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+    </section>
+    <section class="behind-the-scenes container" id="behind-the-scenes">
+        <div class="container">
+            <h2 class="text-center title">Behind the Scenes at The Culinary House</h2>
+            <div id="behind-the-scenesCarousel" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active text-center">
+                        <h3 class="heading">Chefs in Action</h3>
+                        <img src="gallery-assets/behind-the-scenes/chefs-in-action.png" alt="Chefs in Action">
+                        <p class="description">
+                            Our chefs bring recipes to life with precision and passion. Every movement, every flame, and
+                            every ingredient plays its role in crafting a dish that tells a story.
+                        </p>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <h3 class="heading">The Heat of the Kitchen</h3>
+                        <img src="gallery-assets/behind-the-scenes/flames-and-focus.png" alt="The Heat of the Kitchen">
+                        <p class="description">
+                            In the heart of the kitchen, energy meets expertise. From fiery stoves to swift
+                            coordination, our team thrives in the heat to serve you perfection.
+                        </p>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <h3 class="heading">The Final Touch</h3>
+                        <img src="gallery-assets/behind-the-scenes/final-touch.png" alt="The Final Touch">
+                        <p class="description">
+                            It's the smallest details that leave the biggest impression. Whether it's a sprig of herb or
+                            a drop of sauce, we obsess over getting every element just right.
+                        </p>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <h3 class="heading">Freshness Begins Here</h3>
+                        <img src="gallery-assets/behind-the-scenes/ingredients.png" alt="Freshness Begins Here">
+                        <p class="description">
+                            Behind every great dish is great preparation. We believe in starting fresh — handpicked
+                            ingredients, careful cutting, and a commitment to quality.
+                        </p>
+                    </div>
+                </div>
+                <!-- Carousel Controls -->
+                <button class="carousel-controls carousel-control-prev" type="button" data-bs-target="#behind-the-scenesCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-controls carousel-control-next" type="button" data-bs-target="#behind-the-scenesCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+    </section>
+    <footer>
+        <div class="container text-center text-md-start">
+            <div class="row">
+                <!-- About -->
+                <div class="about col-4">
+                    <h5 class="restaurant text-uppercase">The Culinary House</h5>
+                    <p class="tagline">Where Taste Meets Excellence</p>
+                    <p class="copyright">© 2025 The Culinary House. All rights reserved.</p>
+                </div>
+                <!-- Quick Links -->
+                <div class="quick-links col-4">
+                    <h5 class="text-uppercase">Quick Links</h5>
+                    <ul class="links list-unstyled">
+                        <li><a href="../assignment-1/index.html" class="text-decoration-none text-light">Home</a></li>
+                        <li><a href="../assignment-2/gallery.html" class="text-decoration-none text-light">Gallery</a>
+                        </li>
+                        <li><a href="../assignment-3/menu.html" class="text-decoration-none text-light">Menu</a></li>
+                        <li><a href="../assignment-4/place-order.html" class="text-decoration-none text-light">Place
+                                Order</a></li>
+                        <li><a href="../assignment-5/table-booking.html" class="text-decoration-none text-light">Table
+                                Booking</a></li>
+                        <li><a href="../assignment-6/contact-us.html" class="text-decoration-none text-light">Contact
+                                Us</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Info -->
+                <div class="contact-us col-4">
+                    <h5 class="text-uppercase">Contact Us</h5>
+                    <p class="address">📍 123 Culinary Street, Food City</p>
+                    <p class="phone">📞 +91-9876543210</p>
+                    <p class="mail">✉️ info@theculinaryhouse.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS Bundle (local version) -->
+    <script src="../bootstrap/bootstrap.bundle.js"></script>
+</body>
+</html>

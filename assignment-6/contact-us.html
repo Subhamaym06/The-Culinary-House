@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS (local version) -->
+    <link rel="stylesheet" href="../bootstrap/bootstrap.css">
+    
+    <!-- Custom CSS for Contact Us Page -->
+    <link rel="stylesheet" href="contact-us.css">
+    <!-- Linking Favicon -->
+     <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+    <title>Contact Us | The Culinary House</title>
+</head>
+<body>
+    <header>
+        <div class="heading">
+            <a href="../assignment-1/index.html">
+                <img src="../assets/logo.png" alt="The Culinary House Logo">
+            </a>
+            <div class="text">
+                <h1 class="restaurant">The Culinary House</h1>
+                <h5 class="tagline">Where Taste Meets Excellence</h5>
+            </div>
+        </div>
+        <nav>
+            <div class="nav-item" id="home">
+                <a class="nav-link" href="../assignment-1/index.html">Home</a>
+            </div>
+            <div class="nav-item" id="gallery">
+                <a class="nav-link" href="../assignment-2/gallery.html">Gallery</a>
+            </div>
+            <div class="nav-item" id="menu">
+                <a class="nav-link" href="../assignment-3/menu.html">Menu</a>
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"></a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../assignment-3/menu-pages/starters.html">Starters</a></li>
+                    <li><a class="dropdown-item" href="../assignment-3/menu-pages/main-courses.html">Main Courses</a>
+                    </li>
+                    <li><a class="dropdown-item" href="../assignment-3/menu-pages/beverages.html">Beverages</a></li>
+                </ul>
+            </div>
+            <div class="nav-item" id="place-order">
+                <a class="nav-link" href="../assignment-4/place-order.html">Place Order</a>
+            </div>
+            <div class="nav-item" id="table-booking">
+                <a class="nav-link" href="../assignment-5/table-booking.html">Table Booking</a>
+            </div>
+            <div class="nav-item" id="contact-us">
+                <a class="nav-link active-page" href="../assignment-6/contact-us.html   ">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+    <section class="contact container">
+        <h2 class="title text-center">Contact Us</h2>
+        <form>
+            <div class="contact-us">
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder=" Enter Your Full Name" required>
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder=" Enter Your Email Address" required>
+                </p>
+                <p>
+                    <label for="contact-no">Contact Number:</label>
+                    <input type="tel" id="contact-no" placeholder=" Enter Your contact Number" pattern="[0-9]{10}" required>
+                </p>
+                <p>
+                    <label for="feedback">Your Message/Feedback:</label>
+                    <textarea id="feedback" rows="5" cols="25" placeholder=" Tell us what's on your mind" required></textarea>
+                </p>
+            </div>
+            <div class="submit"><input type="submit" value="Share Your Thoughts"></div>
+        </form>
+    </section>
+    <footer>
+        <div class="container text-center text-md-start">
+            <div class="row">
+                <!-- About -->
+                <div class="about col-4">
+                    <h5 class="restaurant text-uppercase">The Culinary House</h5>
+                    <p class="tagline">Where Taste Meets Excellence</p>
+                    <p class="copyright">© 2025 The Culinary House. All rights reserved.</p>
+                </div>
+                <!-- Quick Links -->
+                <div class="quick-links col-4">
+                    <h5 class="text-uppercase">Quick Links</h5>
+                    <ul class="links list-unstyled">
+                        <li><a href="../assignment-1/index.html" class="text-decoration-none text-light">Home</a></li>
+                        <li><a href="../assignment-2/gallery.html" class="text-decoration-none text-light">Gallery</a>
+                        </li>
+                        <li><a href="../assignment-3/menu.html" class="text-decoration-none text-light">Menu</a></li>
+                        <li><a href="../assignment-4/place-order.html" class="text-decoration-none text-light">Place
+                                Order</a></li>
+                        <li><a href="../assignment-5/table-booking.html" class="text-decoration-none text-light">Table
+                                Booking</a></li>
+                        <li><a href="../assignment-6/contact-us.html" class="text-decoration-none text-light">Contact
+                                Us</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Info -->
+                <div class="contact-us col-4">
+                    <h5 class="text-uppercase">Contact Us</h5>
+                    <p class="address">📍 123 Culinary Street, Food City</p>
+                    <p class="phone">📞 +91-9876543210</p>
+                    <p class="mail">✉️ info@theculinaryhouse.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS Bundle (local version) -->
+    <script src="../bootstrap/bootstrap.bundle.js"></script>
+</body>
+</html>

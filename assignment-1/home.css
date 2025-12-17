@@ -1,0 +1,292 @@
+:root {
+  /* Background Colors */
+  --bg-primary: #f9f9f9;
+  --bg-secondary: #ffffff;
+  --bg-dark: #1a252f;
+  --bg-header-footer: #2c3e50;
+  --bg-navbar: #e9ecef;
+  /* Text Colors */
+  --text-primary: #333333;
+  --text-secondary: #e9ecef;
+  --text-highlight: #edd77e;
+  --text-muted: #666666;
+  /* Accent / Button Colors */
+  --accent-1: #ff7043;
+  --accent-2: #f57c00;
+  /* Border & Shadow */
+  --border-color-dark: #2f2f2f;
+  --border-color-light: #e0e0e0;
+  --box-shadow-light: 0 4px 12px #0000001f;
+  --box-shadow-dark: 0 6px 18px #00000066;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+/* Header */
+header {
+  background-color: var(--bg-header-footer);
+  color: var(--text-highlight);
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+}
+header .heading {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2em;
+  align-items: center;
+}
+header .heading img {
+  height: 15vh;
+  width: 15vh;
+  border-radius: 50%;
+}
+header .heading .restaurant {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  letter-spacing: 0.2rem;
+}
+header .heading .tagline {
+  font-family: 'Palatino Linotype', 'Garamond', 'Book Antiqua';
+  letter-spacing: 0.15rem;
+  font-weight: lighter;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 2em;
+}
+header nav .nav-item {
+  font-size: large;
+}
+header nav a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--text-highlight);
+}
+header nav #menu a {
+  display: inline;
+}
+header nav #menu .dropdown-menu {
+  background-color: var(--bg-header-footer);
+  box-shadow: var(--box-shadow-dark);
+  border: 2px solid var(--border-color-dark) !important;
+  width: max-content;
+  text-align: center;
+  line-height: 2rem;
+  left: -100px !important;
+}
+header nav #menu .dropdown-menu a {
+  color: var(--text-highlight);
+  margin: 0;
+  padding: 0;
+}
+header nav #menu .dropdown-menu a:hover {
+  background-color: transparent;
+}
+header nav .active-page {
+  border-bottom: 3px solid var(--text-highlight);
+}
+header nav .active-page:hover {
+  text-decoration: none;
+}
+header::selection {
+  background-color: var(--text-highlight);
+  color: var(--bg-header-footer);
+}
+/* Body */
+body {
+  background-color: var(--bg-primary);
+  width: 100vw;
+}
+/* Hero Section */
+.hero img {
+  width: 100vw;
+  height: 50vh;
+  object-fit: cover;
+}
+/* About Us Section */
+.about-us {
+  background-color: var(--bg-secondary);
+  box-shadow: var(--box-shadow-dark);
+  border-radius: 25px;
+  display: flex;
+  gap: 1rem;
+  padding: 3rem;
+  margin: 4rem auto 4rem auto;
+}
+.about-us .left {
+  width: 70vw;
+}
+.about-us .left h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  letter-spacing: 0.2rem;
+  color: var(--text-highlight);
+}
+.about-us .left h2 {
+  font-family: 'Palatino Linotype', 'Garamond', 'Book Antiqua';
+  letter-spacing: 0.15rem;
+  font-weight: lighter;
+}
+.about-us .left p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 0.05rem;
+}
+.about-us .right img {
+  border-radius: 15px;
+  width: 30vw;
+  object-fit: contain;
+}
+.about-us::selection {
+  background-color: var(--text-primary);
+  color: var(--text-secondary);
+}
+/* Special Dishes Section */
+.special-dishes {
+  background-color: var(--bg-secondary);
+  box-shadow: var(--box-shadow-dark);
+  border-radius: 25px;
+  display: flex;
+  gap: 1rem;
+  padding: 3rem;
+  margin: 4rem auto 4rem auto;
+}
+.special-dishes .left {
+  padding: 3rem;
+  border-radius: 10px;
+  width: 40vw;
+  background-color: var(--bg-dark);
+  color: var(--text-secondary);
+}
+.special-dishes .left .text h1 {
+  font-family: Georgia, serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+.special-dishes .left .text p {
+  font-family: "Palatino Linotype", "Book Antiqua", serif;
+  font-weight: lighter;
+}
+.special-dishes .left .image img {
+  width: 30vw;
+  object-fit: contain;
+  border-radius: 15px;
+}
+.special-dishes .left::selection {
+  background-color: var(--bg-header-footer);
+  color: var(--text-highlight);
+}
+.special-dishes .right {
+  width: 60vw;
+  text-align: center;
+}
+.special-dishes .right>h1 {
+  font-family: Georgia, serif;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07rem;
+  font-weight: bold;
+}
+.special-dishes .right .dishes .dish-name {
+  background-color: var(--bg-header-footer);
+  color: var(--text-highlight);
+  font-family: "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  padding: 0.5rem;
+}
+.special-dishes .right .dishes .dish-price {
+  font-family: Verdana, Geneva, sans-serif;
+}
+.special-dishes .right .dishes .dish-description {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-muted);
+}
+.special-dishes .right a {
+  color: var(--accent-1);
+  text-decoration: underline;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: larger;
+}
+.special-dishes .right h1::selection,
+.special-dishes .right .dish-description::selection,
+.special-dishes .right a::selection {
+  background-color: var(--text-primary);
+  color: var(--text-secondary);
+}
+.special-dishes .right .dish-name::selection {
+  background-color: var(--text-highlight);
+  color: var(--bg-header-footer);
+}
+/* Testimonials Section */
+.testimonials {
+  background-color: var(--bg-secondary);
+  box-shadow: var(--box-shadow-dark);
+  border-radius: 25px;
+  padding: 3rem;
+  margin: 4rem auto 4rem auto;
+}
+.testimonials .heading {
+  padding-bottom: 2rem;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+.testimonials .customer-feedback {
+  font-style: italic;
+  font-size: xx-large;
+}
+.testimonials .customer-rating {
+  font-size: xx-large;
+  font-weight: bolder;
+  letter-spacing: 1rem;
+}
+.testimonials .customer-name {
+  padding: 1rem;
+  font-size: larger;
+  color: var(--text-muted);
+}
+.carousel-controls {
+  filter: invert(1);
+  width: 2rem;
+  height: 2rem;
+}
+.testimonials::selection {
+  background-color: var(--text-muted);
+  color: var(--text-highlight);
+}
+section:hover {
+  background-color: var(--bg-primary);
+}
+/* Footer */
+footer {
+  background-color: var(--bg-header-footer);
+  padding-top: 2rem;
+  color: var(--text-secondary);
+}
+footer .about .restaurant {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  letter-spacing: 0.1rem;
+}
+footer .about .tagline {
+  font-family: 'Palatino Linotype', 'Garamond', 'Book Antiqua';
+  font-weight: lighter;
+}
+.quick-links a:hover {
+  color: var(--text-highlight) !important;
+}
+footer::selection {
+  color: var(--text-muted);
+  background-color: var(--text-secondary);
+}

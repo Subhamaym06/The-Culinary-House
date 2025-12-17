@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS (local version) -->
+  <link rel="stylesheet" href="../../bootstrap/bootstrap.css">
+  <!-- Custom CSS for Starters Page -->
+  <link rel="stylesheet" href="starters.css">
+  <!-- Linking Favicon -->
+  <link rel="shortcut icon" href="../../assets/favicon.png" type="image/x-icon">
+  <title>Starters | Menu | The Culinary House</title>
+</head>
+<body>
+  <header>
+    <div class="heading">
+      <a href="../../assignment-1/home.html">
+        <img src="../../assets/logo.png" alt="The Culinary House Logo">
+      </a>
+      <div class="text">
+        <h1 class="restaurant">The Culinary House</h1>
+        <h5 class="tagline">Where Taste Meets Excellence</h5>
+      </div>
+    </div>
+    <nav>
+      <div class="nav-item" id="home">
+        <a class="nav-link" href="../../assignment-1/home.html">Home</a>
+      </div>
+      <div class="nav-item" id="gallery">
+        <a class="nav-link" href="../../assignment-2/gallery.html">Gallery</a>
+      </div>
+      <div class="nav-item" id="menu">
+        <a class="nav-link active-page" href="../../assignment-3/menu.html">Menu</a>
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"></a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item active-page" href="starters.html">Starters</a></li>
+          <li><a class="dropdown-item" href="main-courses.html">Main Courses</a></li>
+          <li><a class="dropdown-item" href="beverages.html">Beverages</a></li>
+        </ul>
+      </div>
+      <div class="nav-item" id="place-order">
+        <a class="nav-link" href="../../assignment-4/place-order.html">Place Order</a>
+      </div>
+      <div class="nav-item" id="table-booking">
+        <a class="nav-link" href="../../assignment-5/table-booking.html">Table Booking</a>
+      </div>
+      <div class="nav-item" id="contact-us">
+        <a class="nav-link" href="../../assignment-6/contact-us.html   ">Contact Us</a>
+      </div>
+    </nav>
+  </header>
+  <nav class="menu-pages">
+    <a href="starters.html" class="current-page">Starters</a>|
+    <a href="main-courses.html">Main Courses</a>|
+    <a href="beverages.html">Beverages</a>
+  </nav>
+  <main class="starters container ">
+    <div class="row">
+      <aside class="left veg col-6">
+        <h2 class="heading text-success text-center"><span class="fw-light">Savoury</span> <strong>Veg Starters</strong>
+        </h2>
+        <div class="accordion" id="veg-Menu">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="starters-veg-Indian-heading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#starters-veg-Indian">
+                Indian
+              </button>
+            </h2>
+            <div id="starters-veg-Indian" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <ul class="list-unstyled items">
+                  <li>Paneer Tikka - ₹199</li>
+                  <li>Hara Bhara Kabab - ₹179</li>
+                  <li>Dahi ke Sholay - ₹189</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="starters-veg-Chinese-heading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#starters-veg-Chinese">
+                Chinese
+              </button>
+            </h2>
+            <div id="starters-veg-Chinese" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <ul class="list-unstyled items">
+                  <li>Veg Spring Roll - ₹169</li>
+                  <li>Crispy Chilli Potato - ₹159</li>
+                  <li>Paneer Chilli Dry - ₹199</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="starters-veg-Thai-heading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#starters-veg-Thai">
+                Thai
+              </button>
+            </h2>
+            <div id="starters-veg-Thai" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <ul class="list-unstyled items">
+                  <li>Thai Veg Satay - ₹209</li>
+                  <li>Vegetable Tempura - ₹189</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="starters-veg-Continental-heading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#starters-veg-Continental">
+                Continental
+              </button>
+            </h2>
+            <div id="starters-veg-Continental" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <ul class="list-unstyled items">
+                  <li>Cheesy Garlic Bread - ₹149</li>
+                  <li>Grilled Veg Bruschetta - ₹179</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <aside class="right non-veg col-6">
+        <h2 class="heading text-danger text-center"><span class="fw-light">Tasty</span> Non-Veg Starters</h2>
+        <div class="accordion" id="nonveg-Menu">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="starters-nonveg-Indian-heading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#starters-nonveg-Indian">
+                Indian
+              </button>
+            </h2>
+            <div id="starters-nonveg-Indian" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <ul class="list-unstyled items">
+                  <li>Chicken Tikka - ₹229</li>
+                  <li>Mutton Seekh Kebab - ₹279</li>
+                  <li>Fish Amritsari - ₹249</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="starters-nonveg-Chinese-heading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#starters-nonveg-Chinese">
+                Chinese
+              </button>
+            </h2>
+            <div id="starters-nonveg-Chinese" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <ul class="list-unstyled items">
+                  <li>Chicken Lollipop - ₹219</li>
+                  <li>Chilli Chicken Dry - ₹229</li>
+                  <li>Schezwan Chicken - ₹239</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="starters-nonveg-Thai-heading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#starters-nonveg-Thai">
+                Thai
+              </button>
+            </h2>
+            <div id="starters-nonveg-Thai" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <ul class="list-unstyled items">
+                  <li>Thai Basil Chicken - ₹249</li>
+                  <li>Chicken Satay - ₹229</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="starters-nonveg-Continental-heading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#starters-nonveg-Continental">
+                Continental
+              </button>
+            </h2>
+            <div id="starters-nonveg-Continental" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <ul class="list-unstyled items">
+                  <li>BBQ Chicken Wings - ₹239</li>
+                  <li>Herb-Crusted Chicken Strips - ₹219</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+  <footer>
+    <div class="container text-center text-md-start">
+      <div class="row">
+        <!-- About -->
+        <div class="about col-4">
+          <h5 class="restaurant text-uppercase">The Culinary House</h5>
+          <p class="tagline">Where Taste Meets Excellence</p>
+          <p class="copyright">© 2025 The Culinary House. All rights reserved.</p>
+        </div>
+        <!-- Quick Links -->
+        <div class="quick-links col-4">
+          <h5 class="text-uppercase">Quick Links</h5>
+          <ul class="links list-unstyled">
+            <li><a href="../../assignment-1/home.html" class="text-decoration-none text-light">Home</a></li>
+            <li><a href="../../assignment-2/gallery.html" class="text-decoration-none text-light">Gallery</a></li>
+            <li><a href="../../assignment-3/menu.html" class="text-decoration-none text-light">Menu</a></li>
+            <li><a href="../../assignment-4/place-order.html" class="text-decoration-none text-light">Place Order</a>
+            </li>
+            <li><a href="../../assignment-5/table-booking.html" class="text-decoration-none text-light">Table
+                Booking</a></li>
+            <li><a href="../../assignment-6/contact-us.html" class="text-decoration-none text-light">Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- Contact Info -->
+        <div class="contact-us col-4">
+          <h5 class="text-uppercase">Contact Us</h5>
+          <p class="address">📍 123 Culinary Street, Food City</p>
+          <p class="phone">📞 +91-9876543210</p>
+          <p class="mail">✉️ info@theculinaryhouse.com</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Bootstrap JS Bundle (local version) -->
+  <script src="../../bootstrap/bootstrap.bundle.js"></script>
+</body>
+</html>

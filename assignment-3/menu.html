@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS (local version) -->
+    <link rel="stylesheet" href="../bootstrap/bootstrap.css">
+    <!-- Custom CSS for Menu Page -->
+    <link rel="stylesheet" href="menu.css">
+    <!-- Linking Favicon -->
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+    <title>Menu | The Culinary House</title>
+</head>
+<body>
+    <header>
+        <div class="heading">
+            <a href="../assignment-1/index.html">
+                <img src="../assets/logo.png" alt="The Culinary House Logo">
+            </a>
+            <div class="text">
+                <h1 class="restaurant">The Culinary House</h1>
+                <h5 class="tagline">Where Taste Meets Excellence</h5>
+            </div>
+        </div>
+        <nav>
+            <div class="nav-item" id="home">
+                <a class="nav-link" href="../assignment-1/index.html">Home</a>
+            </div>
+            <div class="nav-item" id="gallery">
+                <a class="nav-link" href="../assignment-2/gallery.html">Gallery</a>
+            </div>
+            <div class="nav-item" id="menu">
+                <a class="nav-link active-page" href="../assignment-3/menu.html">Menu</a>
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"></a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../assignment-3/menu-pages/starters.html">Starters</a></li>
+                    <li><a class="dropdown-item" href="../assignment-3/menu-pages/main-courses.html">Main Courses</a>
+                    </li>
+                    <li><a class="dropdown-item" href="../assignment-3/menu-pages/beverages.html">Beverages</a></li>
+                </ul>
+            </div>
+            <div class="nav-item" id="place-order">
+                <a class="nav-link" href="../assignment-4/place-order.html">Place Order</a>
+            </div>
+            <div class="nav-item" id="table-booking">
+                <a class="nav-link" href="../assignment-5/table-booking.html">Table Booking</a>
+            </div>
+            <div class="nav-item" id="contact-us">
+                <a class="nav-link" href="../assignment-6/contact-us.html   ">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+    <section class="menu-pages container">
+        <h1 class="title text-center">Our Menu</h1>
+        <div class="cards  d-flex justify-content-center gap-2">
+            <div class="card starters">
+                <img src="menu-assets/starters.png" alt="Starters">
+                <h2 class="heading">Delightful Starters</h2>
+                <p class="description">Begin your culinary journey with our handcrafted appetizers — a perfect
+                    balance of flavors, textures, and aromas to awaken your palate.</p>
+                <a href="menu-pages/starters.html" class="btn btn-outline-primary mt-2">View Starters</a>
+            </div>
+            <div class="card main-courses">
+                <img src="menu-assets/main-courses.png" alt="">
+                <h2 class="heading">Signature Main Courses</h2>
+                <p class="description">Savor our chef's finest creations — from slow-cooked specialties to modern
+                    classics, each dish promises a fulfilling and flavorful experience.</p>
+                <a href="menu-pages/main-courses.html" class="btn btn-outline-primary mt-2">View Main Courses</a>
+            </div>
+            <div class="card beverages">
+                <img src="menu-assets/beverages.png" alt="">
+                <h2 class="heading">Refreshing Beverages</h2>
+                <p class="description">Quench your thirst with our curated collection of coolers, mocktails, and
+                    artisanal drinks — freshly poured to complement every dish.</p>
+                <a href="menu-pages/beverages.html" class="btn btn-outline-primary mt-2">View Beverages</a>
+            </div>
+        </div>
+    </section>
+    <section class="combos container" id="combos">
+        <div class="container">
+            <h2 class="text-center title">Featured Combos</h2>
+            <div id="combosCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active text-center">
+                        <img src="menu-assets/combos/veg-delight-combo.png" alt="The Culinary House | Wall of Honors">
+                        <h3 class="heading">Veg Delight Combo - <span class="actual-price">₹537</span> ₹499</h3>
+                        <p class="description">
+                            Includes: ✔️ Paneer Tikka ✔️ Veg Manchurian Gravy ✔️ Virgin Mojito<br>🔖 Best Value
+                        </p>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <img src="menu-assets/combos/non-veg-feast-combo.png" alt="The Culinary House | Wall of Honors">
+                        <h3 class="heading">Non-Veg Feast Combo - <span class="actual-price">₹617</span> ₹599</h3>
+                        <p class="description">
+                            Includes: ✔️ Chicken Tikka ✔️ Butter Chicken ✔️ Cold Coffee<br>🔖 Spicy Treat
+                        </p>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <img src="menu-assets/combos/family-platter.png" alt="The Culinary House | Wall of Honors">
+                        <h3 class="heading">Family Platter - <span class="actual-price">₹1124</span> ₹999</h3>
+                        <p class="description">
+                            Includes: ✔️ Hara Bhara Kabab ✔️ Chicken Lollipop ✔️ Mix Veg Curry ✔️ Chicken Manchurian Gravy ✔️ Blue Lagoon & Chocolate Shake<br>🔖 Ideal for Sharing
+                        </p>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <img src="menu-assets/combos/lunch-special.png" alt="The Culinary House | Wall of Honors">
+                        <h3 class="heading">Lunch Special - <span class="actual-price">₹497</span> ₹449</h3>
+                        <p class="description">
+                            Includes: ✔️ Dal Makhani ✔️ Fried Rice with Hot Garlic Sauce ✔️ Lemonade<br>🔖 Perfect for Office Hours
+                        </p>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <img src="menu-assets/combos/chef's-pick-combo.png" alt="The Culinary House | Wall of Honors">
+                        <h3 class="heading">Chef's Pick Combo - <span class="actual-price">₹637</span> ₹549</h3>
+                        <p class="description">
+                            Includes: ✔️ Thai Basil Chicken ✔️ Thai Red Curry with Jasmine Rice ✔️ Mango Tango <br>🔖 Handpicked Favorite
+                        </p>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <img src="menu-assets/combos/continental-comfort-combo.png" alt="The Culinary House | Wall of Honors">
+                        <h3 class="heading">Continental Comfort Combo - <span class="actual-price">₹547</span> ₹489</h3>
+                        <p class="description">
+                            Includes: ✔️ Cheesy Garlic Bread ✔️ Chicken Alfredo Pasta ✔️ Hot Chocolate<br>🔖 Creamy Indulgence
+                        </p>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <img src="menu-assets/combos/couple's-delight-combo.png" alt="The Culinary House | Wall of Honors">
+                        <h3 class="heading">Couple's Delight Combo - <span class="actual-price">₹776</span> ₹699</h3>
+                        <p class="description">
+                            Includes: ✔️ Dahi ke Sholay ✔️ Baked Chicken Lasagna ✔️ Oreo Crunch Shake (2x)<br>🔖 Love at First Bite
+                        </p>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <img src="menu-assets/combos/cool-&-chill-combo.png" alt="The Culinary House | Wall of Honors">
+                        <h3 class="heading">Cool & Chill Combo - <span class="actual-price">₹407</span> ₹399</h3>
+                        <p class="description">
+                            Includes: ✔️ Cheesy Garlic Bread ✔️ Cold Coffee ✔️ Mixed Berry Smoothie<br>🔖 Perfect for Summer
+                        </p>
+                    </div>
+                    <!-- Carousel Controls -->
+                    <button class="carousel-controls carousel-control-prev" type="button"
+                        data-bs-target="#combosCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-controls carousel-control-next" type="button"
+                        data-bs-target="#combosCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+    </section>
+    <section class="top-rated-dishes container" id="top-rated-dishes">
+        <div class="container">
+            <h2 class="text-center title">Customer's Top Rated Dishes</h2>
+            <div id="top-rated-dishesCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active text-center">
+                        <img src="menu-assets/top-rated/butter-chicken.jpg" alt="The Culinary House | Wall of Honors">
+                        <h3 class="heading">Butter Chicken</h3>
+                        <p class="customer-rating text-warning">★★★★★</p>
+                        <p class="customer-feedback">
+                            "Absolutely divine! The chicken just melts in your mouth - rich, creamy, and packed with flavor."
+                        </p>
+                        <p class="customer-name">~ Ritika Sharma</p>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <img src="menu-assets/top-rated/paneer-butter-masala.jpg" alt="The Culinary House | Wall of Honors">
+                        <h3 class="heading">Paneer Butter Masala</h3>
+                        <p class="customer-rating text-warning">★★★★★</p>
+                        <p class="customer-feedback">
+                            "This paneer dish is unbeatable! Perfect balance of spice and creaminess - I order it every time."
+                        </p>
+                        <p class="customer-name">~ Arjun Mehra</p>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <img src="menu-assets/top-rated/chicken-lollipop.jpg" alt="The Culinary House | Wall of Honors">
+                        <h3 class="heading">Chicken Lollipop</h3>
+                        <p class="customer-rating text-warning">★★★★★</p>
+                        <p class="customer-feedback">
+                            "Super crispy on the outside, juicy inside. A must-have for every starter lover!"
+                        </p>
+                        <p class="customer-name">~ Nikhil Banerjee</p>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <img src="menu-assets/top-rated/oreo-crunch-shake.jpg" alt="The Culinary House | Wall of Honors">
+                        <h3 class="heading">Oreo Crunch Shake</h3>
+                        <p class="customer-rating text-warning">★★★★★</p>
+                        <p class="customer-feedback">
+                            "If dessert and milkshake had a baby, this would be it! Truly addictive."
+                        </p>
+                        <p class="customer-name">~ Simran Kapoor</p>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <img src="menu-assets/top-rated/veg-spring-roll.jpg" alt="The Culinary House | Wall of Honors">
+                        <h3 class="heading">Veg Spring Roll</h3>
+                        <p class="customer-rating text-warning">★★★★★</p>
+                        <p class="customer-feedback">
+                            "Fresh, crispy and bursting with flavor. Pairs perfectly with the spicy dip!"
+                        </p>
+                        <p class="customer-name">~ Tanya Bose</p>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <img src="menu-assets/top-rated/chicken-alfredo-pasta.jpg" alt="The Culinary House | Wall of Honors">
+                        <h3 class="heading">Chicken Alfredo Pasta</h3>
+                        <p class="customer-rating text-warning">★★★★★</p>
+                        <p class="customer-feedback">
+                            "Creamy, cheesy perfection! Comfort food at its finest.""
+                        </p>
+                        <p class="customer-name">~ Rahul Iyer</p>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <img src="menu-assets/top-rated/mango-tango.jpg" alt="The Culinary House | Wall of Honors">
+                        <h3 class="heading">Mango Tango</h3>
+                        <p class="customer-rating text-warning">★★★★★</p>
+                        <p class="customer-feedback">
+                            "Sweet, tangy and tropical - just the drink I needed after a long day!""
+                        </p>
+                        <p class="customer-name">~ Meghna Desai</p>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <img src="menu-assets/top-rated/hara-bhara-kabab.jpg" alt="The Culinary House | Wall of Honors">
+                        <h3 class="heading">Hara Bhara Kabab</h3>
+                        <p class="customer-rating text-warning">★★★★★</p>
+                        <p class="customer-feedback">
+                            "Perfect texture and flavor. The green chutney makes it even better.""
+                        </p>
+                        <p class="customer-name">~ Devanshi Patel</p>
+                    </div>
+                    <!-- Carousel Controls -->
+                    <button class="carousel-controls carousel-control-prev" type="button"
+                        data-bs-target="#top-rated-dishesCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-controls carousel-control-next" type="button"
+                        data-bs-target="#top-rated-dishesCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+    </section>
+    <footer>
+        <div class="container text-center text-md-start">
+            <div class="row">
+                <!-- About -->
+                <div class="about col-4">
+                    <h5 class="restaurant text-uppercase">The Culinary House</h5>
+                    <p class="tagline">Where Taste Meets Excellence</p>
+                    <p class="copyright">© 2025 The Culinary House. All rights reserved.</p>
+                </div>
+                <!-- Quick Links -->
+                <div class="quick-links col-4">
+                    <h5 class="text-uppercase">Quick Links</h5>
+                    <ul class="links list-unstyled">
+                        <li><a href="../assignment-1/index.html" class="text-decoration-none text-light">Home</a></li>
+                        <li><a href="../assignment-2/gallery.html" class="text-decoration-none text-light">Gallery</a>
+                        </li>
+                        <li><a href="../assignment-3/menu.html" class="text-decoration-none text-light">Menu</a></li>
+                        <li><a href="../assignment-4/place-order.html" class="text-decoration-none text-light">Place
+                                Order</a></li>
+                        <li><a href="../assignment-5/table-booking.html" class="text-decoration-none text-light">Table
+                                Booking</a></li>
+                        <li><a href="../assignment-6/contact-us.html" class="text-decoration-none text-light">Contact
+                                Us</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Info -->
+                <div class="contact-us col-4">
+                    <h5 class="text-uppercase">Contact Us</h5>
+                    <p class="address">📍 123 Culinary Street, Food City</p>
+                    <p class="phone">📞 +91-9876543210</p>
+                    <p class="mail">✉️ info@theculinaryhouse.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS Bundle (local version) -->
+    <script src="../bootstrap/bootstrap.bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+:root {
+  /* Background Colors */
+  --bg-primary: #f9f9f9;
+  --bg-secondary: #ffffff;
+  --bg-dark: #1a252f;
+  --bg-header-footer: #2c3e50;
+  --bg-navbar: #e9ecef;
+  /* Text Colors */
+  --text-primary: #333333;
+  --text-secondary: #e9ecef;
+  --text-highlight: #edd77e;
+  --text-muted: #666666;
+  /* Accent / Button Colors */
+  --accent-1: #ff7043;
+  --accent-2: #f57c00;
+  /* Border & Shadow */
+  --border-color-dark: #2f2f2f;
+  --border-color-light: #e0e0e0;
+  --box-shadow-light: 0 4px 12px #0000001f;
+  --box-shadow-dark: 0 6px 18px #00000066;
+  /* Veg Accordion Button */
+  --veg-bg: #e6fff0;
+  --veg-text: #198754;
+  --veg-hover-bg: #ccffe0;
+  --veg-hover-text: #145c32;
+  /* Non-Veg Accordion Button */
+  --nonveg-bg: #ffe6e6;
+  --nonveg-text: #dc3545;
+  --nonveg-hover-bg: #ffd6d6;
+  --nonveg-hover-text: #a30000;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+/* Header */
+header {
+  background-color: var(--bg-header-footer);
+  color: var(--text-highlight);
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+}
+header .heading {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2em;
+  align-items: center;
+}
+header .heading img {
+  height: 15vh;
+  width: 15vh;
+  border-radius: 50%;
+}
+header .heading .restaurant {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  letter-spacing: 0.2rem;
+}
+header .heading .tagline {
+  font-family: 'Palatino Linotype', 'Garamond', 'Book Antiqua';
+  letter-spacing: 0.15rem;
+  font-weight: lighter;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 2em;
+}
+header nav .nav-item {
+  font-size: large;
+}
+header nav a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--text-highlight);
+}
+header nav #menu a {
+  display: inline;
+}
+header nav #menu .dropdown-menu {
+  background-color: var(--bg-header-footer);
+  box-shadow: var(--box-shadow-dark);
+  border: 2px solid var(--border-color-dark) !important;
+  width: max-content;
+  text-align: center;
+  line-height: 2rem;
+  left: -100px !important;
+}
+header nav #menu .dropdown-menu a {
+  color: var(--text-highlight);
+  margin: 0;
+  padding: 0;
+}
+header nav #menu .dropdown-menu a:hover {
+  background-color: transparent;
+}
+header nav .active-page {
+  border-bottom: 3px solid var(--text-highlight);
+}
+header nav .active-page:hover {
+  text-decoration: none;
+}
+header::selection {
+  background-color: var(--text-highlight);
+  color: var(--bg-header-footer);
+}
+/* Body */
+body {
+  background-color: var(--bg-primary);
+  width: 100vw;
+}
+.menu-pages{
+  background-color: var(--bg-navbar);
+  padding: 1rem;
+  text-align: center;
+}
+.menu-pages a{
+  color: var(--text-muted);
+  text-decoration: none;
+  padding: 1rem;
+  font-weight: bolder;
+  font-size: large;
+}
+.menu-pages a:hover{
+  color: var(--text-primary);
+}
+.menu-pages .current-page{
+  text-decoration: underline;
+}
+main{
+  margin: 3rem;
+  padding: 1rem;
+  background-color: var(--bg-secondary);
+  border-radius: 15px;
+  box-shadow: var(--box-shadow-dark)
+}
+main:hover{
+  background-color: var(--bg-primary);
+}
+aside{
+  max-height: 90vh;
+  overflow-y: auto;
+}
+aside .heading{
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  background-color: var(--bg-primary);
+  border-radius: 10px;
+  box-shadow: var(--box-shadow-light);
+}
+.left{
+  border-right: 1px dashed var(--border-color-dark);
+}
+.right{
+  border-left: 1px dashed var(--border-color-dark);
+}
+.items li{
+  margin: 1rem;
+  cursor: pointer;
+}
+.veg .accordion-button:not(.collapsed) {
+  background-color: var(--veg-bg);
+  color: var(--veg-text);
+}
+.non-veg .accordion-button:not(.collapsed) {
+  background-color: var(--nonveg-bg);
+  color: var(--nonveg-text);
+}
+.veg .accordion-button:hover {
+  background-color: var(--veg-hover-bg);
+  color: var(--veg-hover-text);
+}
+.non-veg .accordion-button:hover{
+  background-color: var(--nonveg-hover-bg);
+  color: var(--nonveg-hover-text);
+}
+.accordion-collapse {
+  transition: height 0.3s ease;
+}
+main::selection{
+  background-color: var(--text-highlight);
+}
+/* Footer */
+footer {
+  background-color: var(--bg-header-footer);
+  padding-top: 2rem;
+  color: var(--text-secondary);
+}
+footer .about .restaurant {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  letter-spacing: 0.1rem;
+}
+footer .about .tagline {
+  font-family: 'Palatino Linotype', 'Garamond', 'Book Antiqua';
+  font-weight: lighter;
+}
+.quick-links a:hover {
+  color: var(--text-highlight) !important;
+}
+footer::selection {
+  color: var(--text-muted);
+  background-color: var(--text-secondary);
+}
